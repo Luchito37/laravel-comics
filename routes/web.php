@@ -15,6 +15,29 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
+})->name = ("home") ;
+
+Route::get('/libri', function () {
+
+    return view('comics.libri');
+})->name = ("libri");
+
+Route::get('/libri/{id}', function ($id) {
+    $comics = config("comics");
+
+    $foundLibro = null;
+
+    foreach($comics as $i => $libro ) {
+        if  ($libro["id"] === intval($id)) {
+                
+            $foundLibro = $libro;
+            break;
+        }
+    }
+
+
+    return view("comics.dettaglio", compact("foundLibro"));
 });
+
 
 

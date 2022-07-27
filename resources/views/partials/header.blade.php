@@ -51,7 +51,7 @@ $navbarLink = [
         </div>
     </div>
     <div class="container">
-        <nav class="navbar myNavbar ">
+        <nav class="navbar myNavbar">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="{{ asset('img/dc-logo.png') }}" alt="" width="80"  class="d-inline-block">

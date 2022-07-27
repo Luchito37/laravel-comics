@@ -5,8 +5,8 @@
     
 @section('page_content')
 @include('jumbotron')
-    @include('libri')
-    <div class="banner bg-blue">
+    @include('comics.libri')
+    <div class=" bg-blue">
         @include('bannerBlue')
     </div>
     

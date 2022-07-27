@@ -9,8 +9,8 @@
             @foreach ($libri as $libro)
             <div class="col my-3" >
                 <div>
-                    <div class="card-image">
-                        <img src="{{ $libro["thumb"] }}" alt="{{ $libro["series"] }}" />
+                    <div class=" overflow-auto ">
+                        <img class="overflow-hidden img-fluid" src="{{ $libro["thumb"] }}" alt="{{ $libro["series"] }}" />
                     </div>
                 
                     <div class="card-body">
