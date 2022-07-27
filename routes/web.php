@@ -17,6 +17,4 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/prodotti', function () {
-    return view('prodotti');
-});
+

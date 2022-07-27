@@ -1,2 +1,87 @@
 //
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.myNavbar {
+
+    ul {
+
+        margin: 0;
+
+        li {
+            position: relative;
+            padding-top: 1.5rem;
+
+            &:after {
+                transform: scaleY(0);
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                content: '';
+                height: 5px;
+                background-color: #0082f9;
+                transition: .2s;
+                transition-property: transform;
+                transform-origin: bottom;
+                transition-timing-function: ease-in-out;
+            }
+
+            &:hover:after {
+                transform: scaleY(1);
+            }
+        }
+
+    }
+}
+.jumbotron {
+    max-width: 100%;
+    width: 100%;
+    min-height: 350px;
+    max-height: 500px;
+    background-image: url(/img/jumbotron.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.title-mini-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0082f9;
+    color: white;
+    padding: 1rem 1.5rem;
+    transform: translateY(-50%);
+}
+
+.my-card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+    img {
+        width: 55px;
+        object-fit: contain;
+        aspect-ratio: 1;
+    }
+
+    .card-title h3 {
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+}
+
+.footer-jumbotron {
+    max-width: 100%;
+    width: 100%;
+    background-image: url(/img/footer-bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.logo-dc{
+    background-image: url(/img/dc-logo-bg.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

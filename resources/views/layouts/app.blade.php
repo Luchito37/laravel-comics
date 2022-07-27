@@ -17,5 +17,6 @@
     </main>
 
     @include('partials.footer')
+    @include('partials.signupBar')
 </body>
 </html>

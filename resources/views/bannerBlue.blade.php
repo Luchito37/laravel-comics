@@ -1,25 +1,44 @@
 @php
-$cardLinks = [
+$bannerLinks = [
     [
         'title' => 'digital comics',
-        'image' => 'images/buy-comics-digital-comics.png',
+        'img' => 'img/buy-comics-digital-comics.png',
     ],
     [
         'title' => 'dc merchandise',
-        'image' => 'images/buy-comics-merchandise.png',
+        'img' => 'img/buy-comics-merchandise.png',
     ],
     [
         'title' => 'subscription',
-        'image' => 'images/buy-comics-subscriptions.png',
+        'img' => 'img/buy-comics-subscriptions.png',
     ],
     [
         'title' => 'digital comics',
-        'image' => 'images/buy-comics-shop-locator.png',
+        'img' => 'img/buy-comics-shop-locator.png',
     ],
     [
         'title' => 'dc power visa',
-        'image' => 'images/buy-dc-power-visa.svg',
+        'img' => 'img/buy-dc-power-visa.svg',
     ],
 ];
 @endphp
+
+<div class="bg-primary p-5 text-white">
+    <div class="container">
+        <div class="row">
+            @foreach ($bannerLinks as $link)
+                <div class="col">
+                    <div class="my-card">
+                        <div >
+                            <img src="{{$link['img']}}" alt="{{ $link['title'] }}" />
+                        </div>
+                        <div class="card-title">
+                            <h3>{{ $link['title'] }}</h3>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </div>
+</div>
 
