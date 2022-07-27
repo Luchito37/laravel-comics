@@ -85,3 +85,15 @@
   background-repeat: no-repeat;
 }
 
+.comics-poster {
+  height: 50px;
+}
+
+.comics-poster .container div {
+  transform: translateY(-90%);
+}
+
+.gree-bg {
+  background-color: rgb(70, 171, 53);
+}
+

@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-})->name = ("home") ;
+}) ;
 
 Route::get('/libri', function () {
 
@@ -37,7 +37,7 @@ Route::get('/libri/{id}', function ($id) {
 
 
     return view("comics.dettaglio", compact("foundLibro"));
-});
+})->name ("comics.dettaglio");
 
 
 

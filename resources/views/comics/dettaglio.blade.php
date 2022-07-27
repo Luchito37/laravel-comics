@@ -5,26 +5,28 @@
 @section("page_content")
 @include('jumbotron')
 
-    <div class="bg-primary">
-
+<div class="comics-poster bg-primary">
+    <div class="container position-relative">
+        <div>
+            <img src="{{ $foundLibro['thumb'] }}" alt="{{ $foundLibro['title'] }}">
+        </div>
     </div>
+</div>
     <div class="container">
-        <div class="row gap-3">
-            <div class="col-6">
+        <div class="row gap-3 align-items-center">
+            <div class="col">
                 <div>
                     <h1>{{$foundLibro["title"]}}</h1>
                 </div>
-                <div class="bg-success d-flex justify-content-between">
-                    <div class=" gap-3">
-                        <div class="flex-grow-1 d-flex justify-content-between">
-                            <span>U.S. Price: {{$foundLibro["price"]}}</span> 
-                            <span><strong>AVAILABLE</strong></span>
-                        </div>
+                <div class="gree-bg text-white d-flex justify-content-between ">
+                    <div class="p-3 border-bottom border-end border-secondary flex-grow-1 d-flex justify-content-between">
+                        <div><span>U.S. Price : {{$foundLibro["price"]}}</span></div>
+                        <div><span><strong>AVAILABLE</strong></span></div>
                     </div>
-                    <div>
-                        <select class="bg-success" name="check" id="check-availability">
-                            <option selected><strong>Check Availability</strong></option>
-                            <option value="1">Yes</option>
+                    <div class="p-3 border-bottom border-end border-secondary">
+                        <select class="gree-bg text-white border-0">
+                            <option selected>Check Availability</option>
+                            <option value="3">Three</option>
                         </select>
                     </div>
                 </div>
@@ -34,7 +36,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col d-flex ">
+            <div class="col-3 d-flex ">
                 <div class="d-flex flex-column">
                     <span class="text-secondary text-end">ADRVERTISEMENT</span>
                     <img  src="{{ asset('img/adv.jpg') }}" class="float-start" width="300" alt="" >

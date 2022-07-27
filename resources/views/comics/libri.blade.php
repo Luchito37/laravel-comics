@@ -9,9 +9,9 @@
             @foreach ($libri as $libro)
             <div class="col my-3" >
                 <div>
-                    <div class=" overflow-auto ">
+                    <a href="{{route("comics.dettaglio", $libro['id'])}}" class=" overflow-auto ">
                         <img class="overflow-hidden img-fluid" src="{{ $libro["thumb"] }}" alt="{{ $libro["series"] }}" />
-                    </div>
+                    </a>
                 
                     <div class="card-body">
                         <div class="card-title text-uppercase">{{ $libro["title"] }}</div>
